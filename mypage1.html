@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>내정보</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript" src="js/design.js"></script>
+</head>
+<body class="bg_eb">
+	<div id="wrap">
+
+		<!--head-->
+		<div id="head" class="head_mypage">
+			<div class="head_top">
+				<a href="main.html" class="btn_back"><img src="images/btn/btn_head_back.png" height="17" alt="" /></a>
+				<div class="logo"><a href="main.html"><img src="images/logo.png" height="50" alt="" /></a></div>
+				<a href="search1.html" class="btn_search"><img src="images/btn/btn_search.png" height="20" alt="" /></a>
+			</div>
+			<div class="user_info">
+				<div class="pic_box">
+					<div class="pic"><img src="images/br_img1.png" alt=""/></div>
+				</div>
+				<h2 class="name">한승연</h2>
+				<p class="info">새싹</p>
+			</div>
+			<div class="gnb_mypage">
+				<a href="mypage1.html" class="item on">
+					<span>내가 만든 프로젝트</span>
+					<em>2</em>
+				</a>
+				<a href="mypage2.html" class="item">
+					<span>내 후원 현황</span>
+					<em>5</em>
+				</a>
+				<a href="mypage3.html" class="item">
+					<span>좋아요</span>
+					<em>10</em>
+				</a>
+			</div>
+		</div>
+		<!--head end-->
+
+		<!--container-->
+		<div id="container">
+			<div class="project_list">
+				<div class="project">
+					<div class="img"><img src="images/mypage_img01.jpg" alt="" /></div>
+					<div class="cont" onclick="window.location.href='detail1.html'">
+						<div class="edit"><a href="javascript:;"><img src="images/btn/btn_edit.png" height="17" alt="" /></a></div>
+						<h2>사진</h2>
+						<p>맛있는 사진 먹고싶은 사진</p>
+						<div class="graph_wrap">
+							<div class="graph_box">
+								<div class="graph_line">
+									<div class="ico">
+										<img src="images/ico_graph.png" height="10" alt="" />
+										<div class="num">
+											<strong>80%</strong>
+											<em>D-20</em>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="data to_bottom">
+					<div class="img"><img src="images/mypage_data_temp.png" alt="" /></div>
+					<div class="cont">
+						<h3>TODAY</h3>
+						<div class="time_graph_box">
+							<div class="time_graph">
+								<div class="column_box">
+									<div class="graph_column"><strong>60</strong></div>
+								</div>
+								<div class="column_box">
+									<div class="graph_column"><strong>70</strong></div>
+								</div>
+								<div class="column_box">
+									<div class="graph_column"><strong>80</strong></div>
+								</div>
+								<div class="column_box">
+									<div class="graph_column"><strong>0</strong></div>
+								</div>
+
+								<div class="column_box">
+									<div class="graph_column"><strong>80</strong></div>
+								</div>
+								<div class="column_box">
+									<div class="graph_column"><strong>75</strong></div>
+								</div>
+								<div class="column_box">
+									<div class="graph_column"><strong>50</strong></div>
+								</div>
+								<div class="column_box">
+									<div class="graph_column"><strong>10</strong></div>
+								</div>
+
+								<div class="column_box">
+									<div class="graph_column"><strong>65</strong></div>
+								</div>
+								<div class="column_box">
+									<div class="graph_column"><strong>90</strong></div>
+								</div>
+								<div class="column_box">
+									<div class="graph_column"><strong>100</strong></div>
+								</div>
+								<div class="column_box">
+									<div class="graph_column"><strong>0</strong></div>
+								</div>
+								<span class="num0">0</span>
+								<span class="num10">10</span>
+							</div>
+							<div class="time_txt">
+								<span>AM 12:00</span>
+								<span>PM 12:00</span>
+								<span>AM 12:00</span>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
+						//graph
+						$(".column_box").each(function(index){
+							var height = $(".graph_column").eq(index).find("strong").text();
+							height = parseInt(height.replace('%', '')) >= 100 ? 100 : parseInt(height) ;
+							$(".graph_column").eq(index).animate({height:height+'%'},1000);
+						});
+					</script>
+				</div>
+			</div>
+			<div class="project_list">
+				<div class="project">
+					<div class="img"><img src="images/mypage_img02.jpg" alt="" /></div>
+					<div class="cont" onclick="window.location.href='detail1.html'">
+						<div class="edit"><a href="javascript:;"><img src="images/btn/btn_edit.png" height="17" alt="" /></a></div>
+						<h2>미술</h2>
+						<p>마치 스위스를 여행하는 기분</p>
+						<div class="graph_wrap">
+							<div class="graph_box">
+								<div class="graph_line">
+									<div class="ico">
+										<img src="images/ico_graph.png" height="10" alt="" />
+										<div class="num">
+											<strong>80%</strong>
+											<em>D-20</em>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="data to_bottom">
+					<div class="img"><img src="images/mypage_data_temp.png" alt="" /></div>
+					<div class="cont">
+						<h3>WEEK</h3>
+						<img src="images/mypage_graph.png" alt="" style="width: 100%;"/>
+					</div>
+				</div>
+			</div>
+			<br/>
+		</div>
+		<!--container end-->
+
+		<!--foot-->
+		<div id="foot">
+			
+		</div>
+		<!--foot end-->
+
+	</div>
+</body>
+</html>

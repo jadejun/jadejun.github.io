@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>결제</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript" src="js/design.js"></script>
+</head>
+<body class="bg_eb">
+	<div id="wrap">
+
+		<!--head-->
+		<div id="head">
+			<div class="sub_top">
+				<h1 class="subtitle">축하합니다</h1>
+				<a href="detail1.html" class="close">닫기</a>
+			</div>
+		</div>
+		<!--head end-->
+
+		<!--container-->
+		<div id="container">
+
+			<div class="substep">
+				<div class="box">리워드<br />선택</div>
+				<div class="box">후원자<br />정보 입력</div>
+				<div class="box on nobr">결제 예약</div>
+			</div>
+
+			<div class="pay_donebox">
+
+				<h2 class="h2tit"><span id="num" class="num">99</span>번째 빛이 되었습니다!</h2>
+				<div class="line"></div>
+				<p class="h2tit_desc">
+					프로젝트 목표금액을 모두 달성하면 자동결제 됩니다.
+				</p>
+				<div class="pic">
+					<img src="images/done_img.gif" alt="" />
+				</div>
+
+				<a href="main.html" class="btn_style01 btn_submit">이 프로젝트 알리기</a>
+			</div>
+
+		</div>
+		<!--container end-->
+
+		<!--foot-->
+		<div id="foot">
+			
+		</div>
+		<!--foot end-->
+
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			setTimeout(function(){
+				var num = $('#num').html();
+				$('#num').html(parseInt(num)+1);
+			},1000);
+
+		});
+	</script>
+</body>
+</html>

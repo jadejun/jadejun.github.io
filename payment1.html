@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>결제</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript" src="js/design.js"></script>
+</head>
+<body class="bg_eb">
+	<div id="wrap">
+
+		<!--head-->
+		<div id="head">
+			<div class="sub_top">
+				<h1 class="subtitle">이 프로젝트 밀어주기</h1>
+				<a href="detail1.html" class="close">닫기</a>
+			</div>
+		</div>
+		<!--head end-->
+
+		<!--container-->
+		<div id="container">
+
+			<div class="substep">
+				<div class="box  on">리워드<br />선택</div>
+				<div class="box">후원자<br />정보 입력</div>
+				<div class="box nobr">결제 예약</div>
+			</div>
+
+			<div class="pay_contbox">
+				<div class="check_radio">
+					<input type="radio" name="pay" id="pay1" checked="checked" />
+					<label for="pay1"></label>
+				</div>
+				<div class="inner_cont">
+					<h2>이 프로젝트에 기부합니다</h2>
+					<p class="nt">프로젝트 기부는 제작자에게 그대로 전달됩니다.</p>
+					<input type="number" class="money"/><span class="txt">원 을 기부합니다.</span>
+				</div>
+			</div>
+
+			<div class="pay_contbox">
+				<div class="check_radio">
+					<input type="radio" name="pay" id="pay2" />
+					<label for="pay2"></label>
+				</div>
+				<div class="inner_cont">
+					<h2>이 프로젝트에 펀딩합니다</h2>
+					<p class="nt">프로젝트 후원은 제작자가 제작한 상품을 배송해 드립니다.</p>
+					<div class="opt">
+						<strong>저기요 디자인 세트</strong>
+						<p>
+							뱃찌 X 1
+							<br />
+							포스터 X 1
+						</p>
+					</div>
+					<input type="number" class="money"><span class="txt">원 을 펀딩 합니다.</span>
+					<p class="color_p"><span class="num">80</span> 명이 선택했습니다</p>
+				</div>
+			</div>
+
+			<div class="pay_contbox">
+				<div class="check_radio">
+					<input type="radio" name="pay" id="pay3" />
+					<label for="pay3"></label>
+				</div>
+				<div class="inner_cont">
+					<h2>이 프로젝트에 펀딩합니다</h2>
+					<p class="nt">프로젝트 후원은 제작자가 제작한 상품을 배송해 드립니다.</p>
+					<div class="opt">
+						<strong>저기요 디자인 세트</strong>
+						<p>
+							뱃찌 X 1
+							<br />
+							포스터 X 2
+						</p>
+					</div>
+					<input type="number" class="money"><span class="txt">원 을 펀딩 합니다.</span>
+					<p class="color_p"><span class="num">50</span> 명이 선택했습니다</p>
+				</div>
+			</div>
+
+			<div class="pay_contbox">
+				<div class="check_radio">
+					<input type="radio" name="pay" id="pay4" />
+					<label for="pay4"></label>
+				</div>
+				<div class="inner_cont">
+					<h2>이 프로젝트에 펀딩합니다</h2>
+					<p class="nt">프로젝트 후원은 제작자가 제작한 상품을 배송해 드립니다.</p>
+					<div class="opt">
+						<strong>저기요 디자인 세트</strong>
+						<p>
+							뱃찌 X 2
+							<br />
+							포스터 X 1
+						</p>
+					</div>
+					<input type="number" class="money"><span class="txt">원 을 펀딩 합니다.</span>
+					<p class="color_p"><span class="num">80</span> 명이 선택했습니다</p>
+				</div>
+			</div>
+
+			<div class="btn_sub_right">
+				<a href="payment2.html" class="btn_style02">다음 단계</a>
+			</div>
+
+		</div>
+		<!--container end-->
+
+		<!--foot-->
+		<div id="foot">
+			
+		</div>
+		<!--foot end-->
+
+	</div>
+
+	<!--
+	<script type="text/javascript">
+		function number_format(data)
+		{
+			var tmp = '';
+			var number = '';
+			var cutlen = 3;
+			var comma = ',';
+			var i;
+		 
+			var sign = data.match(/^[\+\-]/);
+			if(sign) {
+				data = data.replace(/^[\+\-]/, "");
+			}
+		 
+			len = data.length;
+			mod = (len % cutlen);
+			k = cutlen - mod;
+			for (i=0; i<data.length; i++)
+			{
+				number = number + data.charAt(i);
+		 
+				if (i < data.length - 1)
+				{
+					k++;
+					if ((k % cutlen) == 0)
+					{
+						number = number + comma;
+						k = 0;
+					}
+				}
+			}
+		 
+			if(sign != null)
+				number = sign+number;
+		 
+			return number;
+		}
+
+		$('.money').bind('input propertychange', function() {  
+			var val = String(this.value.replace(/[^0-9]/g, ""));
+ 
+			if(val.length < 1)
+				return false;
+	 
+			this.value = number_format(val);
+
+		}); 
+	</script>
+	-->
+</body>
+</html>

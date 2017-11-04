@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>상품상세</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript" src="js/design.js"></script>
+</head>
+<body class="bg_eb">
+	<div id="wrap">
+
+		<!--head-->
+		<div id="head">
+			<div class="sub_top">
+				<h1 class="subtitle">프로젝트 정보</h1>
+				<a href="main.html" class="close">닫기</a>
+			</div>
+		</div>
+		<!--head end-->
+
+		<!--container-->
+		<div id="container">
+			<div class="detail_box">
+				<!-- 비쥬얼 배너 -->
+				<div class="swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><a href="#"><img src="images/detail_img01.jpg" alt="" /></a></li>
+						<li class="swiper-slide"><a href="#"><img src="images/detail_img01.jpg" alt="" /></a></li>
+						<li class="swiper-slide"><a href="#"><img src="images/detail_img01.jpg" alt="" /></a></li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+				<script language="javascript">
+					var mySwiper = new Swiper('.swiper-container',{
+//						pagination : '.visual .swiper-pagination',
+						autoplay:5000,
+						loop:true
+					})
+				</script>
+				<div class="detail_cont">
+					<p class="h2txt">시각 디자인</p>
+					<h2 class="h2tit">할말다하는 여자 : 저기요, 좀 시리즈</h2>
+					<div class="titinfo">
+						<div class="left">나래 홍</div>
+						<div class="right">신입 디자이너</div>
+					</div>
+
+					<p class="desc">
+						신입디자이너 홍나래의 과감한 컬러를 사용한 포스터입니다. 요즘 문제가 되고 있는 층간소음에서 주제를 생각하여 만들어본 작품으로 감각적인 컬러를 사용했습니다. 잘 부탁드립니다.
+					</p>
+
+					<div class="graph_wrap">
+						<div class="graph_box">
+							<div class="graph_line">
+								<div class="ico">
+									<img src="images/ico_graph.png" height="10" alt="">
+									<div class="num">
+										<strong>80%</strong>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="graph_info">
+						<p>
+							<em>80% </em><span>달성</span><em style="font-size: 15px;">1,234,000 </em><span>원</span>
+						</p>
+						<p>
+							<em>10</em><span>일 남았습니다</span>
+						</p>
+						<p>
+							<em>120</em><span>명의 후원자</span>
+						</p>
+					</div>
+					<div class="btn_box">
+						<a href="payment1.html" class="btn_style01">이 프로젝트 밀어주기</a>
+						<div class="tool">
+							<a href="javascript:;" onclick="share(this);"><img src="images/ico_share.png" alt="Share" style="height:25px;"/></a>
+							<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Like" style="height:25px;"/></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab_box detail">
+					<div class="tabs">
+						<a href="#" class="on">상세설명</a>
+						<a href="#">후원자</a>
+					</div>
+					<div class="tab_cont" style="display: block;">
+						<div class="cont_part1">
+							<h3>2017년 10월 17일 부터 펀딩 중</h3>
+							<p>목표 금액인 2,000,000원이 모여야만 결제됩니다. </p>
+							<p>결제는 2017년 11월 17일에 다함께 진행됩니다.</p>
+							<p>기부금은 목표 달성와 상관없이 작가에게 전달됩니다.</p>
+						</div>
+						<div class="cont_part2">
+							<p>
+								<br/>안녕하세요 신입디자이너 홍나래입니다.
+								저기요 좀.. 시리즈는 주변에서 자주 일어나는 불쾌한 일을 주제로공유하는 프로젝트성 포스터입니다. 특히 층간소음에서 키워드를생각하여 만들어본 작품은 기존에 볼 수 없던 느낌을 주기 위해감각적인 컬러를 사용했습니다.
+								<br/>
+								<br/>
+							</p>
+							<h3>여러분께 전체적인 포스터를 소개합니다 :-)</h3>
+							<div class="pic" style="margin-top: 40px;">
+								<img src="images/detail_cont_img01.jpg" alt="" />
+							</div>
+							<div class="pic">
+								<img src="images/detail_cont_img02.jpg" alt="" />
+							</div>
+						</div>
+						<h2 class="h2tit">[구성]</h2>
+						<p>
+							- 뱃지 1개 + 포스터 1개 + 배송비(준등기) =  7,500원
+							<br/>- 뱃지 1개 + 포스터 2개 + 배송비(준등기) =  13,500원
+							<br/>- 뱃지 1개 + 포스터 3개 + 배송비(준등기) =  19,500원
+							<br/>- 뱃지 2개 + 포스터 1개 + 배송비(택배) =  27,000원
+							<br/>- 뱃지 2개 + 포스터 2개 + 배송비(택배) =  33,000원
+							<br/>- 뱃지 2개 + 포스터 3개 + 배송비(택배) =  39,000원
+							<br/>- 뱃지 3개 + 포스터 3개 + 배송비(택배) =  45,000원
+						</p>
+
+						<h2 class="h2tit">[작가소개]</h2>
+						<div class="intro">
+							<div class="head">
+								<img src="images/detail_img_head01.png" alt="" />
+							</div>
+							<div class="txt">
+								<h3><strong>Narae Hong</strong>  디자이너 홍나래</h3>
+								<p>
+									사회는 때로 차가운 바다와 비슷하기도 합니다.
+									<br/>그런 차가운 바다를 잘 헤엄쳐 가기 위해서 곁에서 위로해주는 친구 한명이 필요하기도 하죠. 저는 타인의 마음을 잘 다독여주는, 도움이 되어주는 그런사람이 되고 싶습니다.
+									<br/>저는 타인을 배려할 줄 아는 디자이너입니다.
+								</p>
+							</div>
+							<div class="cont">
+								<div class="pic"><img src="images/detail_intro_img01.jpg" alt=""></div>
+								<div class="pic"><img src="images/detail_intro_img02.jpg" alt=""></div>
+							</div>
+						</div>
+						<a href="#">
+							<img src="images/detail_img_link01.png" alt="" style="width: 100%;"/>
+						</a>
+					</div>
+					<div class="tab_cont people_box">
+						<div class="people_list">
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img01.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>오니오니빔</h2>
+									<span>1일전</span>
+									<p>
+										펀딩으로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img02.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>정많은 가지소녀</h2>
+									<span>1일전</span>
+									<p>
+										기부하기로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img03.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>세오니 </h2>
+									<span>2일전</span>
+									<p>
+										기부하기로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img04.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>토리사랑  </h2>
+									<span>2일전</span>
+									<p>
+										펀딩으로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img01.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>오니오니빔</h2>
+									<span>1일전</span>
+									<p>
+										펀딩으로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img02.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>정많은 가지소녀</h2>
+									<span>1일전</span>
+									<p>
+										기부하기로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img03.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>세오니 </h2>
+									<span>2일전</span>
+									<p>
+										기부하기로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img04.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>토리사랑  </h2>
+									<span>2일전</span>
+									<p>
+										펀딩으로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img01.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>오니오니빔</h2>
+									<span>1일전</span>
+									<p>
+										펀딩으로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img02.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>정많은 가지소녀</h2>
+									<span>1일전</span>
+									<p>
+										기부하기로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img03.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>세오니 </h2>
+									<span>2일전</span>
+									<p>
+										기부하기로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img">
+									<div class="img_border">
+										<img src="images/detail_people_img04.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="info">
+									<h2>토리사랑  </h2>
+									<span>2일전</span>
+									<p>
+										펀딩으로 참여 하셨습니다.
+									</p>
+								</div>
+								<div class="tool_bar">
+									<a href="javascript:;" onclick="share(this);" ><img src="images/ico_share.png" alt="Share" style="height:15px;" /></a>
+									<a href="javascript:;" onclick="hart02(this);"><img src="images/ico_hart02.png" alt="Share" style="height:15px;"/></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(function(){
+						var $tabs =$('.tab_box .tabs a');
+						var $tab_cont = $('.tab_box .tab_cont');
+						$tabs.click(function(){
+							var index = $tabs.index(this);
+							$tab_cont.eq(index).fadeIn('slow').siblings('.tab_cont').hide();
+							$(this).addClass('on').siblings().removeClass('on');
+							return false;
+							//var len = $tabs.width();
+							//$b.stop(true,false).animate({'left':len*index+'px'},200);
+						});
+					});
+				</script>
+			</div>
+		</div>
+		<!--container end-->
+
+		<!--foot-->
+		<div id="foot">
+			
+		</div>
+		<!--foot end-->
+
+	</div>
+
+</body>
+</html>

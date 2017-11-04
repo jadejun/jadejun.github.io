@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>검색</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<link type="text/css" rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript" src="js/design.js"></script>
+</head>
+<body class="">
+	<div id="wrap">
+
+		<!--head-->
+		<div id="head">
+			<div class="search_top">
+				<a href="main.html" class="btn_back">Back</a>
+				<div class="btn_search_box">
+					<a href="javascript:;" class="btn_search">검색어를 입력해주세요 </a>
+				</div>
+			</div>
+			<div class="search_layer">
+				<div class="model_layer"></div>
+				<div class="search_form">
+					<input type="text" id="search_input" class="text_search" placeholder="검색어를 입력해주세요"/>
+					<a href="javascript:;" class="btn_cancel">취소</a>
+				</div>
+			</div>
+		</div>
+		<!--head end-->
+
+		<!--container-->
+		<div id="container">
+			<div class="search_contbox">
+				<h2 class="h2tit">인기 검색어</h2>
+				<div class="tag_out_box">
+					<div class="tag_box">
+						<a href="#" class="btn_item">#오니비뱃지</a>
+						<a href="#" class="btn_item">#포스터</a>
+						<a href="#" class="btn_item">#대학생</a>
+						<a href="#" class="btn_item">#독립영화</a>
+						<a href="#" class="btn_item">#기부</a>
+						<a href="#" class="btn_item">#미대생</a>
+						<a href="#" class="btn_item">#다큐멘터리</a>
+						<a href="#" class="btn_item">#리워드</a>
+					</div>
+				</div>
+
+
+				<div class="line"></div>
+				<h2 class="h2tit">실시간 HOT검색어</h2>
+				<div class="sort_box">
+					<ul class="list_sort">
+						<li><span class="no">1</span><p class="txt">홍나래 전시회</p><span class="icon up">2</span></li>
+						<li><span class="no">2</span><p class="txt">오니비</p></li>
+						<li><span class="no">3</span><p class="txt">애니메이션</p><span class="icon down">1</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--container end-->
+
+		<!--foot-->
+		<div id="foot">
+			
+		</div>
+		<!--foot end-->
+
+	</div>
+	<script type="text/javascript">
+		$('.btn_search').click(function(){
+			$('#search_input').val('');
+			$('.search_top').animate({height:'49'})
+			$('.search_layer').show();
+			$('#search_input').focus();
+
+		});
+
+		$('.btn_cancel').click(function(){
+			$('.search_top').animate({height:'200px'});
+			$('.search_layer').hide();
+		});
+
+		$('.model_layer').click(function(){
+			$('.btn_cancel').trigger('click');
+		});
+
+		$('.tag_box a ').click(function(){
+			$('.btn_search').trigger('click');
+			$('#search_input').val($(this).text());
+
+		});
+	</script>
+
+</body>
+</html>

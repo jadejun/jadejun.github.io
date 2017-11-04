@@ -517,9 +517,9 @@ input {outline:none;}
 .project_list .data .cont h3 { margin:10px 0; padding:5px 0; color:#FFF; font-family:'Campton'; font-weight:600; font-size:12px; border-bottom:1px solid #FFF;}
 .project_list .data .cont .txt_join {  margin-top:40px; color:#FFF; font-size:15px; font-weight:bold; text-align:center;}
 .project_list .data .cont .txt_join .num { font-family:'Campton';}
-.project_list .data.bg_color01 { background:#e7e757;}
-.project_list .data.bg_color02 { background:#f29c9f;}
-.project_list .data.bg_color03 { background:#448aca;}
+.project_list .data.bg_color01 { background:#e7e757; background-image: url('../images/sub_img02.png'); width: 100%; }
+.project_list .data.bg_color02 { background:#f29c9f; background-image: url('../images/sub_img01.png'); width: 100%; }
+.project_list .data.bg_color03 { background:#448aca; background-image: url('../images/sub_img03.png'); width: 100%; }
 .project_list .to_bottom {background-image:-webkit-linear-gradient(to bottom, #9d8ffe, #7966fd); background-image:linear-gradient(to bottom, #9d8ffe, #7966fd);}
 .project_list .data .time_graph_box { height:100%;}
 .project_list .data .time_graph_box .time_graph { position:relative; height:55%; overflow:hidden;}

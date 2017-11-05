@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'SDGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/apple-sd-gothic-neo-regular.woff) format('woff'),
+       url(../font/apple-sd-gothic-neo-regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'SDGothic';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../font/apple-sd-gothic-neo-bold.woff) format('woff'),
+       url(../font/apple-sd-gothic-neo-bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'SDGothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../font/APPLE-SDGothic-ExtraBold.woff) format('woff'),
+       url(../font/APPLE-SDGothic-ExtraBold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Campton';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/Campton-Light.woff) format('woff'),
+    url(../font/Campton-Light.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Campton';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../font/Campton-Bold.woff) format('woff'),
+    url(../font/Campton-Bold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Campton';
+    font-style: normal;
+    font-weight: 800;
+    src: url(../font/Campton-ExtraBold.woff) format('woff'),
+    url(../font/Campton-ExtraBold.otf) format('opentype');
+}
+/*Reset*/
+body, h1, h2, h3, h4, h5, h6, div, p, pre, address, 
+ul, ol, li, dl, dt, dd, table, caption, th, td, form, fieldset, 
+legend, hr {
+    margin:0; padding:0;
+}
+ul, ol {
+    list-style:none;
+}
+table {
+    border-spacing:0; 
+    border:0; 
+    border-collapse:collapse;
+}
+img, fieldset {
+    border:0;
+}
+address, caption, code, em {
+    font-style:normal; font-weight:normal;
+}
+input, select, button, textarea {
+    font-size:100%; 
+    color:#000; 
+    font-family:'SDGothic', sans-serif; vertical-align:middle;
+}
+
+body {
+    color:#343434; 
+    font-size:12px; 
+    line-height:18px; 
+    font-family:'SDGothic', 'Campton', sans-serif;
+}
+a {
+    color:#000; 
+    text-decoration:none;
+}
+a:link, a:visited, a:hover, a:active {color:inherit;}
+label, button {cursor:pointer;}
+textarea, pre {overflow:auto;}
+img {vertical-align:top;}
+fieldset {display:block;}
+
+
+/*html5*/
+article, aside, dialog, footer, header, section, 
+nav, figure, menu {
+    display:block;
+}

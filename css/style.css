@@ -84,3 +84,24 @@ header ul li{
 #main img{
     margin-top: 265px;
 }
+#app{
+    text-align: center;
+}
+#app img{
+    width: 100%;
+}
+#kiosk{
+    padding-top: 30px;
+    text-align: center;
+}
+#kiosk img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+#how{
+    padding-top: 130px;
+    text-align: center;
+}
+#how img{
+    width: 100%;
+}

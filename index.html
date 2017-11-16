@@ -25,6 +25,10 @@
         e.preventDefault();
         $('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
     });
+    $('#contact_go').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
 })
 $(window).scroll(function () { 
     var scroll = $(this).scrollTop();
@@ -43,21 +47,33 @@ $(window).scroll(function () {
         <ul>
             <li><a href="#main" id="main_go">ARTI</a></li>
             <li><a href="#app"  id="app_go">어플 소개</a></li>
-            <li><a href="#kiosk" id="kiosk_go">키오스크 소개</a></li>
             <li><a href="#how" id="how_go">사용법</a></li>
+            <li><a href="#kiosk" id="kiosk_go">키오스크 소개</a></li>
+            <li><a href="#contact" id="contact_go">contact</a></li>
         </ul>
     </header>
     <div id="main">
-        <img src="images/logo.png" />
+        <img src="images/main.jpg" />
     </div>
     <div id = "app">
-        <img src = "images/1.jpg" />
-    </div>
-    <div id = "kiosk">
-        <img src = "images/2.jpg" />
+        <img src = "images/app.png" />
     </div>
     <div id = "how">
-        <img src = "images/3.jpg" />
+        <img src = "images/how.png" />
+    </div>
+    <div id = "kiosk">
+        <img src = "images/kiosk.png" />
+    </div>
+    <div id = "contact">
+        <img src = "images/contact.jpg" />
+    </div>
+    <div id = "imagee">
+        <a href="https://www.behance.net/narae0911"><img src="images/h.png" id="image"/></a>
+        <a href="https://www.behance.net/dbsl11239bdd"><img src="images/l.png" id="image1"/></a>
+        <a href="https://www.behance.net/jadejund224"><img src="images/k.png" id="image2"/></a>
+    </div>
+    <div id = "qr">
+        <img src="images/qr.png "/>
     </div>
 </body>
 </html>

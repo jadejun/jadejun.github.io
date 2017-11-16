@@ -75,33 +75,50 @@ header ul li{
     margin-top: 50px;
 }
 #main{
-    background: -webkit-linear-gradient(top, #7865fd,#b56efa,#e473f6);
-    background-repeat: no-repeat;
-    text-align: center;
-    width: 100%;
-    height: 768px;
 }
 #main img{
-    margin-top: 265px;
+    width: 100%;
 }
 #app{
     text-align: center;
 }
 #app img{
-    width: 100%;
-}
-#kiosk{
-    padding-top: 30px;
-    text-align: center;
-}
-#kiosk img{
-    width: 100%;
-    padding-bottom: 10px;
+    width: 60%;
+    padding-top: 130px;
 }
 #how{
-    padding-top: 130px;
     text-align: center;
 }
 #how img{
-    width: 100%;
+    width: 60%;
+    padding-top: 130px;
+}
+#kiosk{
+    text-align: center;
+}
+#kiosk img{
+    width: 60%;
+    padding-top: 130px;
+}
+#contact{
+}
+#contact img{
+    width: 100%
+}
+#imagee {
+    text-align: center;
+    margin-top: -29%;
+    margin-right: 115px;
+}
+#imagee img{
+    margin-left: 100px;
+}
+#qr {
+    background-color: #7865fd;
+    height: 430px;
+    text-align: center;
+}
+#qr img{
+    width: 20%;
+    margin-top: 12.5%;
 }
